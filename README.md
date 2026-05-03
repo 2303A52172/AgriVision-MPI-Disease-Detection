@@ -22,6 +22,14 @@ A high-performance crop disease detection system using MPI and OpenCV with paral
 
 ---
 
+## 🔍 Serial vs Parallel Output
+
+### 🖥️ Serial Output
+![Serial](serial_output.jpg)
+
+### ⚡ Parallel Output
+![Parallel](parallel_output.jpg)
+
 ## 📊 Execution Result
 
 Serial Time: 0.0109  
