@@ -1,66 +1,135 @@
-# 🌾 AgriVision – MPI Disease Detection
+# 🌱 AgriVision – MPI-Based Crop Disease Detection
 
-A high-performance crop disease detection system using MPI and OpenCV with parallel processing.
+A high-performance crop disease detection system using **MPI (Message Passing Interface)** and **OpenCV**.
+This project analyzes crop images, detects disease patterns, and compares **serial vs parallel performance**.
 
 ---
 
 ## 🚀 Features
-- Parallel image processing using MPI
-- Disease detection based on color analysis
-- Performance comparison (Serial vs Parallel)
-- Works on multiple processors
+
+* 🌿 Crop disease detection using color analysis
+* ⚡ Parallel processing using MPI (mpi4py)
+* ⏱️ Serial vs Parallel time comparison
+* 🖼️ Image processing using OpenCV
+* 📊 Infection percentage calculation
+* 🌽 Supports crops like Maize & Mirchi
 
 ---
 
-## 📸 Input Image
+## 🛠️ Technologies Used
+
+* Python
+* MPI (mpi4py)
+* OpenCV
+* NumPy
+
+---
+
+## 📂 Project Structure
+
+AgriVision-MPI-Disease-Detection/
+│
+├── image_test.py
+├── crop.jpg
+├── serial_output.jpg
+├── parallel_output.jpg
+├── disease_classified.jpg
+├── README.md
+
+---
+
+## ▶️ How to Run
+
+### Step 1: Open Command Prompt
+
+```bash
+cd C:\MPI\src
+```
+
+### Step 2: Run using MPI (Parallel)
+
+```bash
+mpiexec -n 4 python image_test.py
+```
+
+---
+
+## 📊 Results
+
+### 🖼️ Input Image
+
 ![Input](crop.jpg)
 
 ---
 
-## 📸 Output Image
-![Output](disease_classified.jpg)
+### ⚙️ Serial Output
+
+![Serial Output](serial_output.jpg)
 
 ---
 
-## 🔍 Serial vs Parallel Output
+### 🚀 Parallel Output (MPI)
 
-### 🖥️ Serial Output
-![Serial](serial_output.jpg)
-
-### ⚡ Parallel Output
-![Parallel](parallel_output.jpg)
-
-## 📊 Execution Result
-
-Serial Time: 0.0109  
-Parallel Time: 0.0012  
-Speedup: 8.46  
-
-Detected Disease: Fungal Infection
+![Parallel Output](parallel_output.jpg)
 
 ---
 
-## ⚙️ How to Run
-cd C:\MPI\src
-mpiexec -n 4 python image_test.py
+### 🦠 Disease Classification Output
 
+![Disease Output](disease_classified.jpg)
 
 ---
 
-## 🧠 Technologies Used
-- Python
-- MPI (mpi4py)
-- OpenCV
-- NumPy
+## ⏱️ Performance Comparison
+
+| Processing Type | Description                       |
+| --------------- | --------------------------------- |
+| Serial          | Normal execution                  |
+| Parallel (MPI)  | Faster using multiple processes ⚡ |
+
+---
+
+## 🧠 Disease Detection Logic
+
+The system detects diseases based on color patterns:
+
+* 🟡 Yellow → Nutrient deficiency / Early infection
+* 🟤 Brown → Leaf spot disease
+* ⚫ Black → Fungal infection
+
+---
+
+## 📌 Output Example
+
+Yellow Infection % : 0.18
+Brown Infection %  : 0.00
+Black Infection %  : 2.62
 
 ---
 
 ## 🎯 Conclusion
-Parallel processing significantly improves execution speed for crop disease detection.
+
+* MPI improves processing speed
+* Parallel execution is faster than serial
+* Useful for smart agriculture systems
 
 ---
 
-## 🔮 Future Work
-- Use AI/ML for accurate classification
-- Real-time detection using mobile camera
-- Multi-crop disease identification
+## 🔮 Future Enhancements
+
+* 🤖 AI-based disease detection
+* 📱 Mobile app integration
+* 🌐 Real-time monitoring
+
+---
+
+## 👩‍💻 Author
+
+Shivani
+AgriVision – High-Speed Crop Health Analysis Using MPI
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
